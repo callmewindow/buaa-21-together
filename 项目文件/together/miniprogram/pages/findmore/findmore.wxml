@@ -1,0 +1,209 @@
+<!--pages/findmore/findmore.wxml-->
+<view id='title'>
+        <view class="weui-search-bar" id='my_search'>
+            <view class="weui-search-bar__form" id='my_form'>
+
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" id='my_type' placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+
+                <label class="weui-search-bar__label" id='se_content' hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+
+            </view>
+
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+
+        </view>
+</view>
+
+<view id='function'>
+
+  <view id='sort' bindtap='showsort' style='color:{{sort_color}}'>
+    {{sortshow}}
+  </view>
+  <view id='sort_hide' style='display:{{sort_dis}};'>
+    <view class='sort_li' style='color:{{sort_color1}}' bindtap='sortchoose1'>
+      {{sort1}}
+      <wux-icon style='display:{{sort_icon1}}' type='ios-checkmark' size='30' id='sort_yes' />
+    </view>
+    <view class='sort_li' style='color:{{sort_color2}}' bindtap='sortchoose2'>
+      {{sort2}}
+      <wux-icon style='display:{{sort_icon2}}' type='ios-checkmark' size='30' id='sort_yes' />
+    </view>
+    <view class='sort_li' style='color:{{sort_color3}}' bindtap='sortchoose3'>
+      {{sort3}}
+      <wux-icon style='display:{{sort_icon3}}' type='ios-checkmark' size='30' id='sort_yes' />
+    </view>
+    <view class='sort_li' style='color:{{sort_color4}}' bindtap='sortchoose4'>
+      {{sort4}}
+      <wux-icon style='display:{{sort_icon4}}' type='ios-checkmark' size='30' id='sort_yes' />
+    </view>
+  </view>
+
+  <view id='type' bindtap='showtype' style='color:{{type_color}}'>{{typeshow}}</view>
+  <view id='type_hide' style='display:{{type_dis}}'>
+    <view class='type_li' style='color:{{type_color1}}' bindtap='typechoose1'>
+      {{type1}}
+      <wux-icon style='display:{{type_icon1}}' type='ios-checkmark' size='30' id='type_yes' />
+    </view>
+    <view class='type_li' style='color:{{type_color2}}' bindtap='typechoose2'>
+      {{type2}}
+      <wux-icon style='display:{{type_icon2}}' type='ios-checkmark' size='30' id='type_yes' />
+    </view>
+    <view class='type_li' style='color:{{type_color3}}' bindtap='typechoose3'>
+      {{type3}}
+      <wux-icon style='display:{{type_icon3}}' type='ios-checkmark' size='30' id='type_yes' />
+    </view>
+  </view>
+
+  <view id='array'>
+    <image src='{{arrayimg}}' class='img_wxss'></image>
+  </view>
+
+  <view id='screen' bindtap='showscreen' style='color:{{screen_color}}'>
+    <view id='screen_text'>筛选</view>
+    <view id='screen_icon'><wux-icon type='ios-funnel' size='15' /></view>
+  </view>
+  <view id='screen_bg' style='display:{{screen_dis}}' bindtap='showscreen'></view>
+  <view id='screen_hide' style='display:{{screen_dis}}'>
+    <view class='screen_type1'>
+      <view class='screen_name'>所在区域</view>
+      <view class='{{screen_li1}}'>沙河</view>
+      <view class='screen_li'>学院路</view>
+    </view>
+    <view class='screen_type2'>
+      <view class='screen_name'>几成新</view>
+      <view class='screen_li'>六成新以下</view>
+      <view class='screen_li'>六成新</view>
+      <view class='screen_li'>七成新</view>
+      <view class='screen_li'>八成新</view>
+      <view class='screen_li'>九成新</view>
+      <view class='screen_li'>全新</view>
+    </view>
+    <view class='screen_type2'>
+      <view class='screen_name'>使用季节</view>
+      <view class='screen_li'>春</view>
+      <view class='screen_li'>夏</view>
+      <view class='screen_li'>秋</view>
+      <view class='screen_li'>冬</view>
+      <view class='screen_li'>均可</view>
+    </view>
+    <view class='screen_type2'>
+      <view class='screen_name'>适用人群</view>
+      <view class='screen_li'>大一</view>
+      <view class='screen_li'>大二</view>
+      <view class='screen_li'>大三</view>
+      <view class='screen_li'>大四</view>
+      <view class='screen_li'>研究生</view>
+      <view class='screen_li'>教师</view>
+    </view>
+    
+    <view id='screen_button'>
+      <view id='button_left'>重置</view>
+      <view id='button_right'>确定</view>
+    </view>
+    
+    </view>
+
+</view>
+
+<view id='allgoods'>
+  <view class='goods'>
+    <view class='goods_img'><image src='{{goodsimg}}' class='img_wxss'></image></view>
+    <view class='goods_des'>
+      <view class='des_name'>东京食尸鬼-国产正版-可动手办-金木研</view>
+      <view class='des_value'>
+      <text class='value_icon'>￥</text>
+      66</view>
+      <view class='des_type'>出售</view>
+      <view class='des_position'>沙河</view>
+      <view class='enter'>
+      <text space='nbsp'>进店 </text>
+      <wux-icon class='enter_icon' type="ios-arrow-forward" size='10' />
+      </view>
+    </view>
+  </view>
+  <view class='goods'>
+    <view class='goods_img'><image src='{{goodsimg}}' class='img_wxss'></image></view>
+    <view class='goods_des'>
+      <view class='des_name'>东京食尸鬼-国产正版-可动手办-金木研</view>
+      <view class='des_value'>
+      <text class='value_icon'>￥</text>
+      66</view>
+      <view class='des_type'>出售</view>
+      <view class='des_position'>沙河</view>
+      <view class='enter'>
+      <text space='nbsp'>进店 </text>
+      <wux-icon class='enter_icon' type="ios-arrow-forward" size='10' />
+      </view>
+    </view>
+  </view>
+  <view class='goods'>
+    <view class='goods_img'><image src='{{goodsimg}}' class='img_wxss'></image></view>
+    <view class='goods_des'>
+      <view class='des_name'>东京食尸鬼-国产正版-可动手办-金木研</view>
+      <view class='des_value'>
+      <text class='value_icon'>￥</text>
+      66</view>
+      <view class='des_type'>出售</view>
+      <view class='des_position'>沙河</view>
+      <view class='enter'>
+      <text space='nbsp'>进店 </text>
+      <wux-icon class='enter_icon' type="ios-arrow-forward" size='10' />
+      </view>
+    </view>
+  </view>
+  <view class='goods'>
+    <view class='goods_img'><image src='{{goodsimg}}' class='img_wxss'></image></view>
+    <view class='goods_des'>
+      <view class='des_name'>东京食尸鬼-国产正版-可动手办-金木研</view>
+      <view class='des_value'>
+      <text class='value_icon'>￥</text>
+      66</view>
+      <view class='des_type'>出售</view>
+      <view class='des_position'>沙河</view>
+      <view class='enter'>
+      <text space='nbsp'>进店 </text>
+      <wux-icon class='enter_icon' type="ios-arrow-forward" size='10' />
+      </view>
+    </view>
+  </view>
+  <view class='goods'>
+    <view class='goods_img'><image src='{{goodsimg}}' class='img_wxss'></image></view>
+    <view class='goods_des'>
+      <view class='des_name'>东京食尸鬼-国产正版-可动手办-金木研</view>
+      <view class='des_value'>
+      <text class='value_icon'>￥</text>
+      66</view>
+      <view class='des_type'>出售</view>
+      <view class='des_position'>沙河</view>
+      <view class='enter'>
+      <text space='nbsp'>进店 </text>
+      <wux-icon class='enter_icon' type="ios-arrow-forward" size='10' />
+      </view>
+    </view>
+  </view>
+  <view class='goods'>
+    <view class='goods_img'><image src='{{goodsimg}}' class='img_wxss'></image></view>
+    <view class='goods_des'>
+      <view class='des_name'>东京食尸鬼-国产正版-可动手办-金木研</view>
+      <view class='des_value'>
+      <text class='value_icon'>￥</text>
+      66</view>
+      <view class='des_type'>出售</view>
+      <view class='des_position'>沙河</view>
+      <view class='enter'>
+      <text space='nbsp'>进店 </text>
+      <wux-icon class='enter_icon' type="ios-arrow-forward" size='10' />
+      </view>
+    </view>
+  </view>
+
+</view>

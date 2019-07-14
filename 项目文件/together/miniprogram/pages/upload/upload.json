@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "商品上传",
+  "usingComponents": {
+    "wux-cell-group": "../../dist/cell-group/index",
+    "wux-cell": "../../dist/cell/index",
+    "wux-upload": "../../dist/upload/index"
+  }
+}

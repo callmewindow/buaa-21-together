@@ -1,0 +1,240 @@
+page {
+  background-color: #f7f2f2;
+}
+
+.block1 {
+  width: 100%;
+  height: 200rpx;
+  border-bottom-left-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+  background-color: #3f72af;
+  position: relative;
+}
+
+.head {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 80rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 20rpx;
+}
+
+.nickname {
+  width: 300rpx;
+  color: #fff;
+  position: absolute;
+  top: 50rpx;
+  left: 210rpx;
+}
+
+.settings {
+  width: 53rpx;
+  height: 50rpx;
+  background-color: #3f72af;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+
+.settings::after {
+  border: none;
+}
+
+.settingsIcon {
+  width: 53rpx;
+  height: 50rpx;
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+}
+
+.closeSettings {
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #3f72af;
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  z-index: 2;
+}
+
+.closeSettings::after {
+  border: none;
+}
+
+.closeSettingsIcon{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 0rpx;
+}
+
+.settingsView {
+  width: 40%;
+  height: 380rpx;
+  border-radius: 10rpx;
+  background-color: #3f72af;
+  position: absolute;
+  top: 350rpx;
+  left: 30%;
+  z-index: 1;
+}
+
+
+.settingsBtnBar {
+  width: 100%;
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 40rpx;
+}
+
+.settingsBtn {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.settingsBtnText {
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.myFavorites {
+  width: 275rpx;
+  height: 80rpx;
+  background-color: #3f72af;
+  position: absolute;
+  top: 120rpx;
+  left: 202rpx;
+}
+
+.myFavorites::after {
+  border: none;
+}
+
+.myStore {
+  width: 275rpx;
+  height: 80rpx;
+  background-color: #3f72af;
+  position: absolute;
+  top: 120rpx;
+  left: 475rpx;
+}
+
+.myStore::after {
+  border: none;
+}
+
+.buttonText {
+  font-size: 36rpx;
+  color: #fff;
+}
+
+.block3 {
+  width: 100%;
+  height: 450rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+  position: relative;
+  top: 50rpx;
+}
+
+.title3 {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1rpx solid #f7f2f2;
+  top: 0rpx;
+  left: 0rpx;
+}
+
+.titlePoint3 {
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 5rpx;
+  background-color: #3f72af;
+  position: absolute;
+  top: 35rpx;
+  left: 30rpx;
+}
+
+.titleText3 {
+  font-size: 36rpx;
+  position: absolute;
+  top: 14rpx;
+  left: 50rpx;
+}
+
+.miniProgramBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.part_act {
+  float: left;
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+}
+
+.act_img {
+  margin-left: 35rpx;
+  width: 90rpx;
+  height: 90rpx;
+  margin-bottom: 10rpx;
+  color: rgb(73, 73, 73);
+}
+
+.act_image {
+  width: 100%;
+  height: 100%;
+}
+
+.act_name {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  margin-top: -10rpx;
+  color: rgba(94, 96, 124, 0.911);
+}
+
+.block4 {
+  width: 100%;
+  height: 100rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background-color: #3f72af;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0rpx;
+}
+
+.block4Btn {
+  width: 80rpx;
+  height: 80rpx;
+  background-color: #3f72af;
+}
+
+.block4Btn::after {
+  border: none;
+}
+
+.block4BtnIcon {
+  width: 58rpx;
+  height: 58rpx;
+  position: absolute;
+  top: 11rpx;
+  left: 11rpx;
+}

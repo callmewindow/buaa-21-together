@@ -1,0 +1,69 @@
+<view class="page">
+
+  <view class="page__bd">
+
+    <view class="weui-cells__title">所在校区</view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__bd">
+          <picker bindchange="bindCampusChange" value="{{campusIndex}}" range="{{campus}}">
+            <view class="weui-select">{{campus[campusIndex]}}</view>
+          </picker>
+        </view>
+      </view>
+    </view>
+
+    <form bindsubmit='addAddress'>
+      <view class="weui-cells__title">具体地址</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">公寓名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="apartment" placeholder="{{apartment}}" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">宿舍号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="hostel" placeholder="{{hostel}}" />
+          </view>
+        </view>
+      </view>
+      <view class="weui-cells__title">学生信息（仅为暂时验证身份使用，不会泄露）</view>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">学号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="studentID" placeholder="{{studentID}}" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="name" placeholder="{{name}}" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">专业系号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" name="majorID" placeholder="{{majorID}}" />
+          </view>
+        </view>
+      </view>
+      <view class="weui-btn-area">
+        <button class="weui-btn" form-type='submit'>确定</button>
+      </view>
+    </form>
+
+  </view>
+</view>

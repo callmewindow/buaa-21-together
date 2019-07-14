@@ -1,0 +1,45 @@
+<view id='top'>
+  <view id='pic'>
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+
+  <view id='head'>
+    <view id='headtxt'>
+      <view id='name'>
+        <open-data type="userNickName" lang="zh_CN"></open-data>
+      </view>
+      <view id='scj'>的店铺</view>
+    </view>
+    <view id='tranbtn' catchtap='tranpic'>
+      <image src='../../icon/tiaopai2.png' style='width:50rpx;height:50rpx;'></image>
+    </view>
+
+  </view>
+</view>
+
+
+<view id='content' style='display:{{show}}'>
+  <view class='goods' wx:for="{{goods_list}}" wx:key="this">
+    <navigator url='../detail/detail?id={{item._id}}' class='goods_image_ex'>
+      <image src="{{item.fileID}}" class='goods_image' mode='aspectFit'></image>
+    </navigator>
+    <view id='delete' catchtap='del' data-id='{{item._id}}'>×</view>
+  </view>
+</view>
+
+<view id='content2' style='display:{{show2}}'>
+  <view class='goods2' wx:for="{{goods_list}}" wx:key="this">
+    <navigator url='../detail/detail?id={{item._id}}' class='goods_image_ex'>
+      <image src="{{item.fileID}}" class='goods_image' mode='aspectFit'></image>
+    </navigator>
+    <view id='delete2' catchtap='del' data-id='{{item._id}}'>×</view>
+  </view>
+</view>
+
+<view id='upload' bindtap='toupload'>
+  上 传 商 品
+</view>
+
+<view class='kongbai' style='display:{{kongbai}}'>
+  赶快去上传商品吧
+</view>

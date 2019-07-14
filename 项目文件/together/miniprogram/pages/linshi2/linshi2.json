@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "商品分类",
+  "backgroundColor": "#ebf0f6",
+  "usingComponents": {
+    "wux-fab-button": "../../dist/fab-button/index"
+  }
+}

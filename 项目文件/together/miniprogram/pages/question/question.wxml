@@ -1,0 +1,21 @@
+<view id='head'>
+  <view class="page">
+  <view class="page__bd">       
+    <wux-accordion-group id="qtitle" title="有没有你想问的问题呢">
+      <wux-accordion key="key1" title="如何修改个人信息" content="在个人信息右上角的设置处可进行修改"></wux-accordion>
+      <wux-accordion key="key3" title="如何删除信息" content="去到收藏夹或者上传商品页面直接点击删除按钮即可"></wux-accordion>
+      <wux-accordion key="key4" title="如何联系卖家" content="您可以先前往商品信息，在下方通过复制微信号或手机号来联系卖家。"></wux-accordion>
+      <wux-accordion key="key5" title="无法登陆会是什么问题导致的" content="1.当账号存在安全风险，将被保护，此时无法登陆。2.没有登录统一认证账号。3.当然也有可能是没联网"></wux-accordion>
+      <wux-accordion key="key6" title="如何反馈问题" content="可前往下方讨论区或者在关于偕行页面通过联系方式直接反应"></wux-accordion>
+    </wux-accordion-group>      
+  </view>
+</view>
+</view>
+
+<view id='mid'></view>
+
+<navigator target="miniProgram" open-type="navigate" app-id="wx8abaf00ee8c3202e"  extra-data="{{ extraData }}" version="release">
+<view id='bottom'>
+  <view id='bottomtext'>若有问题未解决可前往反馈 ></view>
+</view>
+</navigator>

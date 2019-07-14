@@ -1,0 +1,45 @@
+#title {
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  background-color: #dbe2ef;
+}
+
+.title-text{
+  margin-top: rpx;
+}
+
+#input {
+  width: 100%;
+}
+
+#blank {
+  width: 100%;
+  height: 120rpx;
+}
+
+.choose{
+  text-align: right;
+  float: right;
+}
+
+#button{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 40rpx;
+}
+
+.selectImage{
+  width: 30%;
+  height:200rpx;
+  float: left;
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+  border: 1rpx solid rgb(175, 175, 175);
+}
+
+.text{
+  font-size: 70%;
+  color: grey;
+}

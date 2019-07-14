@@ -1,0 +1,56 @@
+<movable-area style="position: fixed; height: 100%; width: 100%; ">
+
+  <view id="elec">
+    <image class="elec" src="../../images/elec.jpg" style="opacity:0.5"></image>
+    <view class="elect">电子产品</view>
+  </view>
+
+  <view id="book">
+    <image class="book" src="../../images/book.jpg" style="opacity:0.5"></image>
+    <view class="bookt">书籍</view>
+  </view>
+
+  <view id="dail">
+    <image class="dail" src="../../images/dail.jpg" style="opacity:0.5"></image>
+    <view class="dailt">生活用品</view>
+  </view>
+
+  <view id="virt">
+    <image class="virt" src="../../images/virt.jpg" style="opacity:0.5"></image>
+    <view class="virtt">虚拟产品</view>
+  </view>
+
+  <view id="food">
+    <image class="food" src="../../images/food.jpg" style="opacity:0.5"></image>
+    <view class="foodt">零食</view>
+  </view>
+
+  <view id="other">
+    <image class="other" src="../../images/other.jpg" style="opacity:0.5"></image>
+    <view class="othert">其他</view>
+  </view>
+
+  <view id="tick">
+    <image class="tick" src="../../images/tick.jpg" style="opacity:0.5"></image>
+    <view class="tickt">票券</view>
+  </view>
+
+  <movable-view direction="all" x="{{x}}" y="{{y}}">
+    <wux-fab-button position="bottomRight" direction="vertical" theme="calm" buttons="{{buttons}}" bind:click="onClick" />
+  </movable-view>
+
+</movable-area>
+
+<view id="function">
+  <view id="home" class="li_func">
+    <image src="{{homeimg}}" class="icon-image"></image>
+  </view>
+
+  <view id="fair" class="li_func">
+    <image src="{{fairimg}}" class="icon-image"></image>
+  </view>
+
+  <view id="identity" class="li_func">
+    <image src="{{identityimg}}" class="icon-image"></image>
+  </view>
+</view>

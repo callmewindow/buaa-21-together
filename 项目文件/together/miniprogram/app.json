@@ -1,0 +1,41 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/home/home",
+    "pages/send/send",
+    "pages/linshi3/linshi3",
+    "pages/information/information",
+    "pages/about/about",
+    "pages/question/question",
+    "pages/test2/test2",
+    "pages/upload/upload",
+    "pages/linshi2/linshi2",
+    "pages/shop/shop",
+    "pages/class/class",
+    "pages/findmore/findmore",
+    "pages/collection/collection",
+    "pages/first/first",
+    "pages/information/address/address",
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3f72af",
+    "navigationBarTitleText": "i偕行",
+    "navigationBarTextStyle": "white"
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx8abaf00ee8c3202e",
+    "wx43455bfb4cfa6e2f",
+    "wxf68a40a9f57c8f3f",
+    "wx78adad8a552d0009"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

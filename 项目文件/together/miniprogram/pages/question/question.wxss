@@ -1,0 +1,25 @@
+page {
+  background-color: #f7f2f2;
+}
+#head{
+  width: 100%;
+  height: 800rpx;
+  /* border: 1rpx solid black; */
+}
+
+#mid{
+  height: 280rpx;
+  width: 100%;
+}
+
+#bottom{
+  position: fixed;
+  bottom: 100rpx;
+  width: auto;
+  text-align: center;
+  color: gray;
+  font-size: 30rpx;
+  border-radius: 20rpx;
+  margin-left: 200rpx;
+  z-index: 1;
+}

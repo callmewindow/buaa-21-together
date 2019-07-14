@@ -1,0 +1,151 @@
+page{
+   background: rgb(243, 241, 241);
+}
+
+#top{
+  height: 200rpx;
+  width: 100%;
+}
+
+#head {
+  width: 100%;
+  height: 200rpx;
+  background-color: #3f72af;
+  float: left;
+}
+
+#headtxt {
+  margin-top: 50rpx;
+  margin-left: 210rpx;
+  height: 80rpx;
+  width: 80%;
+}
+
+#tranbtn{
+  height: 50rpx;
+  width: 50rpx;
+  float: right;
+  margin-right: 20rpx;
+  margin-bottom: 10rpx;
+}
+
+#content{
+  width: 100%;
+  height: 850rpx;
+  position: absolute;
+  overflow: scroll;
+}
+
+#content2{
+  width: 100%;
+  height: 850rpx;
+  position: absolute;
+  overflow: scroll;
+  display: none;
+}
+
+#pic {
+  border-radius:80rpx;
+  overflow:hidden;
+  height:160rpx;
+  width:160rpx;
+  position:absolute;
+  top:20rpx;
+  left:20rpx
+}
+
+#name {
+  float: left;
+  color: white;
+  
+  height: 80rpx;
+}
+
+#scj {
+  float: left;
+  /* margin-top: 100rpx; */
+  color: white;
+  margin-left: 20rpx;
+  height: 80rpx;
+}
+
+.goods{
+  position: relative;
+  height: 260rpx;
+  width: 340rpx;
+  float: left;
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  border-radius: 5%;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+}
+
+.goods2{
+  position: relative;
+  height: 170rpx;
+  width: 220rpx;
+  float: left;
+  margin-left: 25rpx;
+  margin-top: 25rpx;
+  border-radius: 5%;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+}
+
+.goods_image_ex{
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.goods_image{
+  width: 100%;
+  height: 100%;
+}
+
+.goods_description{
+  text-align: center;
+  font-size: 35rpx;
+}
+
+#delete{
+  font-size: 50rpx;
+  float: right;
+  margin-top: -280rpx;
+  margin-left: 300rpx;
+  position: absolute;
+  z-index: 5;
+}
+
+#delete2{
+  font-size: 35rpx;
+  float: right;
+  margin-top: -185rpx;
+  margin-left: 190rpx;
+  position: absolute;
+  z-index: 5;
+}
+
+
+#upload{
+  position: fixed;
+  background-color: rgb(9, 165, 9);
+  bottom: 50rpx;
+  height: 70rpx;
+  padding-top: 10rpx;
+  width: 36%;
+  margin-left: 32%;
+  text-align: center;
+  color: white;
+  font-size: 35rpx;
+  border-radius: 20rpx;
+  z-index: 11;
+}
+
+.kongbai{
+  width: 100%;
+  height: auto;
+  font-size: 40rpx;
+  margin-top: 30rpx;
+  color: gray;
+  text-align: center;
+}

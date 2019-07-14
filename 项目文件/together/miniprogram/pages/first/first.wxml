@@ -1,0 +1,75 @@
+<view id="title">
+  <view id="code" class="li_func">
+    <image src="{{homeimg}}" class="icon-image"></image>
+  </view>
+  <view class="weui-search-bar" id="mysearch">
+    <view class="weui-search-bar__form" id="myform">
+      <view class="weui-search-bar__box">
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+        <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+          <icon type="clear" size="14"></icon>
+        </view>
+      </view>
+      <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+        <icon class="weui-icon-search" type="search" size="14"></icon>
+        <view class="weui-search-bar__text">搜索</view>
+      </label>
+    </view>
+    <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+  </view>
+</view>
+
+
+<view id="outline">
+  <swiper id="swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}">
+    <view wx:for="{{datalist}}">
+      <swiper-item>
+        <image src="{{item.img}}" class="slide-image" bindtap="{{item.to}}"></image>
+      </swiper-item>
+    </view>
+  </swiper>
+</view>
+
+<view id="type">
+  <view id="typetitle">
+    商品分类
+  </view>
+
+  <view id="typecontent">
+    <view class="li_type1" bindtap='to1'>搜索界面</view>
+    <view class="li_type1" bindtap='to2'>物品详细界面</view>
+    <view class="li_type1" bindtap='to3'>上传商品界面</view>
+    <view class="li_type1" bindtap='to4'>创建店铺界面</view>
+    <view class="li_type2" bindtap='to5'>常见问题界面</view>
+    <view class="li_type2" bindtap='to6'>设置界面</view>
+    <view class="li_type2" bindtap='to7'>查看订单界面</view>
+    <view class="li_type2" bindtap='to8'>关于偕行界面</view>
+  </view>
+</view>
+
+<view id="hot">
+  <view id="hottitle">
+    热门商品
+  </view>
+
+  <view id="hotcontent">
+
+  </view>
+</view>
+
+<view id="function">
+  <view id="home" class="li_func">
+    <image src="{{homeimg}}" class="icon-image"></image>
+  </view>
+
+  <view id="fair" class="li_func" bindtap='to9'>
+    物品分类页面
+    <image src="{{fairimg}}" class="icon-image"></image>
+  </view>
+
+  <view id="identity" class="li_func" bindtap='to10'>
+    个人信息页面
+    <image src="{{identityimg}}" class="icon-image"></image>
+  </view>
+</view>

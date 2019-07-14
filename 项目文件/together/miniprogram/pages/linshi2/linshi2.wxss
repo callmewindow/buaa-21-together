@@ -1,0 +1,265 @@
+page {
+  background-color: #f7f2f2;
+}
+#textbook {
+  width: 320rpx;
+  height: 320rpx;
+  margin-top: 40rpx;
+  margin-left: 50rpx;
+  float: left;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.textbook {
+  width: 320rpx;
+  height: 320rpx;
+  border-radius: 20rpx;
+}
+
+#study {
+  width: 135rpx;
+  height: 180rpx;
+  margin-top: 40rpx;
+  margin-right: 30rpx;
+  float: right;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.study {
+  width: 135rpx;
+  height: 180rpx;
+  border-radius: 20rpx;
+}
+
+#entertain {
+  width: 135rpx;
+  height: 180rpx;
+  margin-top: 40rpx;
+  margin-right: 50rpx;
+  float: right;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.entertain {
+  width: 135rpx;
+  height: 180rpx;
+  border-radius: 20rpx;
+}
+
+#virt {
+  width: 300rpx;
+  height: 182rpx;
+  margin-top: 30rpx;
+  margin-right: 50rpx;
+  float: right;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.virt {
+  width: 300rpx;
+  height: 182rpx;
+  border-radius: 20rpx;
+}
+
+#elec {
+  width: 320rpx;
+  height: 320rpx;
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+  float:left;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.elec {
+  width: 320rpx;
+  height: 320rpx;
+  border-radius: 20rpx;
+}
+
+#makeup {
+  width: 320rpx;
+  height: 320rpx;
+  margin-top: 30rpx;
+  margin-left: 50rpx;
+  float:left;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.makeup {
+  width: 320rpx;
+  height: 320rpx;
+  border-radius: 20rpx;
+}
+
+#daily {
+  width: 300rpx;
+  height: 180rpx;
+  margin-top: 30rpx;
+  margin-right: 50rpx;
+  float: right;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.daily {
+  width: 300rpx;
+  height: 180rpx;
+  border-radius: 20rpx;
+}
+
+#food {
+  width: 300rpx;
+  height: 182rpx;
+  margin-top: 30rpx;
+  margin-right: 50rpx;
+  float: right;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.food {
+  width: 300rpx;
+  height: 182rpx;
+  border-radius: 20rpx;
+}
+
+#tick {
+  width: 135rpx;
+  height: 175rpx;
+  margin-top: 30rpx;
+  margin-right: 30rpx;
+  float: right;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.tick {
+  width: 135rpx;
+  height: 175rpx;
+  border-radius: 20rpx;
+}
+
+#other {
+  width: 135rpx;
+  height: 175rpx;
+  margin-top: 30rpx;
+  margin-right: 50rpx;
+  float: right;
+  border-radius: 20rpx;
+  box-shadow: 0 0 8rpx rgba(0, 0, 0, 0.14), 0 8rpx 16rpx rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+.other {
+  width: 135rpx;
+  height: 175rpx;
+  border-radius: 20rpx;
+}
+
+.text {
+  position: absolute;
+  left: 0;
+  top: 38%;
+  right: 0;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 80%;
+  font-family: "幼圆"
+}
+
+#function {
+  width: 100%;
+  height: 120rpx;
+  position: fixed;
+  bottom: 0rpx;
+  background-color: #dbe2ef;
+}
+
+.li_func {
+  height: 60rpx;
+  width: 60rpx;
+  float: left;
+  margin-left: 142.5rpx;
+  margin-top: 27rpx;
+}
+
+.icon-image {
+  width: 100%;
+  height: 100%;
+}
+
+.function4 {
+  width: 100%;
+  height: 100rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  background-color: #3f72af;
+  position: fixed;
+  bottom: 0rpx;
+}
+
+#background4 {
+  width: 100%;
+  height: 100rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+  position: fixed;
+  bottom: 0rpx;
+  z-index: 0;
+}
+
+#home {
+  width: 80rpx;
+  height: 80rpx;
+  border: none;
+  position: absolute;
+  top: 10rpx;
+  left: 100rpx;
+}
+
+.homeIcon {
+  width: 58rpx;
+  height: 58rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 11rpx;
+}
+
+#fair {
+  width: 80rpx;
+  height: 80rpx;
+  border: none;
+  position: absolute;
+  top: 10rpx;
+  left: 335rpx;
+}
+
+.fairIcon {
+  width: 52rpx;
+  height: 52rpx;
+  position: absolute;
+  top: 12rpx;
+  left: 14rpx;
+}
+
+#me {
+  width: 80rpx;
+  height: 80rpx;
+  border: none;
+  position: absolute;
+  top: 10rpx;
+  right: 100rpx;
+}
+
+.meIcon {
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 10rpx;
+}

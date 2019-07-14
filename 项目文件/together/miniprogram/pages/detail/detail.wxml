@@ -1,0 +1,82 @@
+<view wx:for="{{good_list}}" wx:key="this">
+
+  <view id="outline">
+    <view id='goodimg' bindtap='showimage' data-index="{{item.fileID}}">
+      <image src="{{item.fileID}}" id='imgimg'  mode='aspectFit'></image>
+    </view>
+    <view id='type'>
+      分类：{{item.type}}
+    </view>
+    <view id = "name">
+      {{item.goodname}}
+    </view>
+    <view id='price'>
+      ¥{{item.price}}
+    </view>
+    <!--view bindtap = "tocollect" id='addIcon'>
+        <image id = "iconimg" src = "{{collectImg}}"></image>
+    </view-->
+    <image src = "{{collectImg}}" bindtap = "tocollect" id='addIcon' ></image>
+</view>
+
+  <view id = "goods">
+    <view id = "goodsTitle">商品详情</view>
+  </view>
+
+  <view id = "goodsIntro">
+    <view class = "table">
+      <view class = " tr" style = "height: 200rpx;">
+        <view class = "td1"></view>
+        <view class = "td2">简介</view>
+        <view class = "td3" style = "color: gray;">{{item.description}}</view>
+        <view class = "td4"></view>
+      </view>
+      <view class = " tr">
+        <view class = "td1"></view>
+        <view class = "td2">数量</view>
+        <view class = "td3" style = "color: gray">{{item.count}}</view>
+        <view class = "td4"></view>
+      </view>
+      <view class = " tr">
+        <view class = "td1"></view>
+        <view class = "td2">位置</view>
+        <view class = "td3" style = "color: gray">{{item.position}}</view>
+        <view class = "td4"></view>
+      </view>
+      <view class = " tr">
+        <view class = "td1"></view>
+        <view class = "td2">新旧</view>
+        <view class = "td3" style = "color: gray">{{item.newold}}</view>
+        <view class = "td4"></view>
+      </view>
+      <view class = " tr">
+        <view class = "td1"></view>
+        <view class = "td2">上传时间</view>
+        <view class = "td3" style = "color: gray">{{item.time}}</view>
+        <view class = "td4"></view>
+      </view>
+      <view class = " tr" bindtap="fuzhi" data-index="{{item.wechatnum}}">
+        <view class = "td1"></view>
+        <view class = "td2">商家微信</view>
+        <view class = "td3" style = "color: gray">{{item.wechatnum}}<text class='tip'>点击可进行复制</text></view>
+        <view class = "td4"></view>
+      </view>
+      <view class = " tr" bindtap="fuzhi" data-index="{{item.phonenum}}">
+        <view class = "td1"></view>
+        <view class = "td2">商家手机</view>
+        <view class = "td3" style = "color: gray">{{item.phonenum}}<text class='tip'>点击可进行复制</text></view>
+        <view class = "td4"></view>
+      </view>
+
+    </view>
+  </view>
+
+</view>
+
+<view class='kongbai' style='display:{{kongbai}}'>
+  未连接网络或商品已下架
+</view>
+
+<movable-view direction="all" x="{{x}}" y="{{y}}">
+  <wux-fab-button position="bottomRight" direction="vertical" theme="calm" buttons="{{buttons}}" bind:click="onClick" />
+</movable-view>

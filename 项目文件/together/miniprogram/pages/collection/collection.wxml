@@ -1,0 +1,31 @@
+<view id='array' bindtap='changearray'>
+  <image src='{{arrayimg}}' class='img_wxss' ></image>
+</view>
+<view id='allgoods'>
+<view class='goods' wx:for="{{goods_list}}" wx:key="this" style='display:{{waimaotiao}}'>
+  <navigator url='../detail/detail?id={{item._id}}'>
+    <view class='goods_img'><image src="{{item.fileID}}" class='img_wxss' mode='aspectFit'></image></view>
+      <view class='goods_des' >
+        <view class='des_name'>{{item.goodname}}</view>
+        <view class = 'info'>
+          <view class='des_value'>￥{{item.price}}</view>
+          <view class='des_position'>{{item.position}}</view>
+          <view class='des_type'>{{item.count}}个</view>
+        </view>
+      </view>
+  </navigator>
+  <view class='delete' catchtap='onDeleteTap' data-id='{{item._id}}'>×</view>
+</view>
+
+<view class='goods2' wx:for="{{goods_list}}" wx:key="this" style='display:{{waimaoge}}'>
+  <navigator url='../detail/detail?id={{item._id}}'>
+    <view class='goods_img2'><image src="{{item.fileID}}" class='img_wxss' mode='aspectFit'></image></view>
+  </navigator>
+  <view class='delete2' catchtap='onDeleteTap' data-id='{{item._id}}'>×</view>
+</view>
+
+</view>
+
+<view class='kongbai' style='display:{{kongbai}}'>
+  暂时没有收藏任何东西哦
+</view>

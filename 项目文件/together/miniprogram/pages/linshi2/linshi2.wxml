@@ -1,0 +1,70 @@
+<movable-area style="position: fixed; height: 100%; width: 100%; ">
+
+  <view id="textbook" bindtap='totextbook'>
+    <image class="textbook" src="../../images/textbook.jpg" style="opacity:0.6"></image>
+    <view class="text">学习书籍</view>
+  </view>
+  
+  <view id="entertain" bindtap='toentertain'>
+    <image class="entertain" src="../../images/entertain.jpg" style="opacity:0.6"></image>
+    <view class="text">娱乐书籍</view>
+  </view>
+
+  <view id="study" bindtap='totick'>
+    <image class="study" src="../../images/study.jpg" style="opacity:0.6"></image>
+    <view class="text">学习用品</view>
+  </view>
+
+  <view id="virt" bindtap='tovirt'>
+    <image class="virt" src="../../images/virt.jpg" style="opacity:0.6"></image>
+    <view class="text">虚拟产品</view>
+  </view>
+
+  <view id="elec" bindtap='toelec'>
+    <image class="elec" src="../../images/elec.jpg" style="opacity:0.6"></image>
+    <view class="text">电子产品</view>
+  </view>
+
+  <view id="daily" bindtap='todaily'>
+    <image class="daily" src="../../images/dail.jpg" style="opacity:0.6"></image>
+    <view class="text">生活用品</view>
+  </view>
+
+  <view id="food" bindtap='tofood'>
+    <image class="food" src="../../images/food.jpg" style="opacity:0.6"></image>
+    <view class="text">食品</view>
+  </view>
+
+  <view id="makeup" bindtap='tomakeup'>
+    <image class="makeup" src="../../images/makeup.jpg" style="opacity:0.6"></image>
+    <view class="text">美妆用品</view>
+  </view>
+
+  <view id="other" bindtap='toother'>
+    <image class="other" src="../../images/other.jpg"  style="opacity:0.6"></image>
+    <view class="text">其他</view>
+  </view>
+
+  <view id="tick" bindtap='totick'>
+    <image class="tick" src="../../images/tick.jpg" style="opacity:0.6"></image>
+    <view class="text">票券</view>
+  </view>
+
+  <movable-view direction="all" x="{{x}}" y="{{y}}">
+    <wux-fab-button position="bottomRight" direction="vertical" theme="calm" buttons="{{buttons}}" bind:click="onClick" />
+  </movable-view>
+
+</movable-area>
+
+<view class="function4">
+  <image id="background4" src="{{background4}}"></image>
+  <button id="home" plain="true" bindtap='tohome'>
+    <image class="homeIcon" src="{{homeIcon}}"></image>
+  </button>
+  <button id="fair" plain="true">
+    <image class="fairIcon" src="{{fairIcon}}"></image>
+  </button>
+  <button id="me" plain="true" bindtap='toperson'>
+    <image class="meIcon" src="{{meIcon}}"></image>
+  </button>
+</view>

@@ -1,0 +1,44 @@
+<view class='normalContent' bindtap='topic1'>
+  <view class='normalContentText'>{{textContent[0]}}</view>
+  <view class='normalContentPicture'>
+    <image src="{{pictureContent[0]}}" class='innerPicture'></image>
+  </view>
+</view>
+
+<view class='line'></view>
+
+<view class='normalContent' bindtap='topic2'>
+  <view class='normalContentText'>{{textContent[1]}}</view>
+  <view class='normalContentPicture'>
+    <image src="{{pictureContent[1]}}" class='innerPicture'></image>
+  </view>
+</view>
+
+<view class='line'></view>
+
+<view class='normalContent' bindtap='topic3'>
+  <view class='normalContentText'>{{textContent[2]}}</view>
+  <view class='normalContentPicture'>
+    <image src="{{pictureContent[2]}}" class='innerPicture'></image>
+  </view>
+</view>
+
+<view class='line'></view>
+
+<view class='normalContent' bindtap='topic4'>
+  <view class='normalContentText'>{{textContent[3]}}</view>
+  <view class='normalContentPicture'>
+    <image src="{{pictureContent[3]}}" class='innerPicture'></image>
+  </view>
+</view>
+
+<view class='line'></view>
+
+<view class='normalContent' bindtap='topic5'>
+  <view class='normalContentText'>{{textContent[4]}}</view>
+  <view class='normalContentPicture'>
+    <image src="{{pictureContent[4]}}" class='innerPicture'></image>
+  </view>
+</view>
+
+<view class='line'></view>

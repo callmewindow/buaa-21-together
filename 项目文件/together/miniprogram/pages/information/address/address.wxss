@@ -1,0 +1,8 @@
+page {
+  background-color: #f7f2f2;
+}
+.page__desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

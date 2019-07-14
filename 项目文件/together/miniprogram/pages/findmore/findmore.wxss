@@ -1,0 +1,265 @@
+/* pages/findmore/findmore.wxss */
+#title{
+  width: 100%;
+  height: 80rpx;
+  position: fixed;
+  top: -5rpx;
+  background-color: #3f72af;
+}
+#my_search{
+  width: 100%;
+  height: 100%;
+  background-color: #3f72af;
+  float: left;
+}
+#my_form{
+  height: 100%;
+}
+.img_wxss{
+  width: 100%;
+  height: 100%;
+}
+
+#function{
+  height: 70rpx;
+  width: 100%;
+  position: fixed;
+  top: 75rpx;
+  background: white;
+}
+#sort{
+  width: 150rpx;
+  padding-top: 12rpx;
+  margin-left: 60rpx;
+  float: left;
+  font-size: 27rpx;
+  color: rgb(65, 65, 65);
+}
+#sort_i{
+  float: right;
+  margin-right: 15rpx;
+  margin-top: 5rpx;
+}
+#sort_yes{
+  float: right;
+}
+#sort_hide{
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  margin-top: 70rpx;
+}
+.sort_li{
+  height: 65rpx;
+  width: 90%;
+  padding-top: 15rpx;
+  margin-left: 5%;
+  color: rgb(65, 65, 65);
+  font-size: 30rpx;
+  border-bottom: 1rpx solid rgba(100, 100, 102, 0.322);
+}
+#sort_li_1{
+  color: rgb(255, 60, 0);
+}
+#type{
+  width: 110rpx;
+  padding-top: 12rpx;
+  margin-left: 70rpx;
+  float: left; 
+  font-size: 27rpx;
+  text-align: center;
+  color: rgb(65, 65, 65);
+}
+#type_yes{
+  float: right;
+}
+#type_hide{
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  margin-top: 70rpx;
+}
+.type_li{
+  height: 65rpx;
+  width: 90%;
+  padding-top: 15rpx;
+  margin-left: 5%;
+  color: rgb(65, 65, 65);
+  font-size: 30rpx;
+  border-bottom: 1rpx solid rgba(100, 100, 102, 0.322);
+}
+#array{
+  height: 55rpx;
+  width: 55rpx;
+  margin-top: 7rpx;
+  margin-left: 130rpx;
+  float: left;
+}
+#screen{
+  height: 60rpx;
+  width: 140rpx;
+  border-left: 1rpx solid rgba(100, 100, 102, 0.322);
+  margin-top: 5rpx;
+  margin-right:10rpx;
+  float: right;
+  font-size: 27rpx;
+  color: rgb(65, 65, 65);
+}
+#screen_text{
+  margin-top: 10rpx;
+  margin-left: 35rpx;
+  float: left;
+}
+#screen_icon{
+  float: right;
+  margin-top: 11rpx;
+  margin-right: 20rpx;
+}
+#screen_bg{
+  position: fixed;
+  margin-top: 70rpx;
+  height: 1200rpx;
+  width: 100%;
+  background-color: rgba(105, 105, 105, 0.322);
+  z-index: -2;
+}
+#screen_hide{
+  position: fixed;
+  margin-top: 70rpx;
+  right: 0rpx;
+  width: 570rpx;
+  background-color: white;
+}
+.screen_type1{
+  height: 150rpx;
+  margin-top: 20rpx;
+}
+.screen_type2{
+  height: 250rpx;
+}
+.screen_name{
+  color: rgb(65, 65, 65);
+  font-size: 27rpx;
+  margin-left: 30rpx;
+}
+.screen_li{
+  float: left;
+  height: 57rpx;
+  width: 150rpx;
+  background-color: rgb(240, 240, 240);
+  border-radius: 5rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  padding-top: 15rpx;
+  font-size: 27rpx;
+  color: rgb(36, 36, 36);
+  text-align: center;
+}
+.screen_li2{
+  float: left;
+  height: 57rpx;
+  width: 150rpx;
+  background-color: rgba(255, 60, 0, 0.205);
+  border-radius: 5rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  padding-top: 15rpx;
+  font-size: 27rpx;
+  color: rgba(255, 60, 0, 0.89);
+  text-align: center;
+}
+#screen_button{
+  height: 65rpx;
+  width: 350rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+  float: right;
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+  margin-right: 30rpx;
+}
+#button_left{
+  float: left;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  font-size: 35rpx;
+  color: white;
+  background-color: orange;
+}
+#button_right{
+  float: left;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+  font-size: 34rpx;
+  color: white;
+  background-color: red;
+}
+
+#allgoods{
+  width: 100%;
+  margin-top: 145rpx;
+}
+.goods{
+  height: 280rpx;
+  width: 100%;
+}
+.goods_img{
+  height: 260rpx;
+  width: 260rpx;
+  margin-top: 10rpx;
+  margin-left: 30rpx;
+  overflow: hidden;
+  border-radius: 20rpx;
+  float: left;
+}
+.goods_des{
+  height: 270rpx;
+  width: 440rpx;
+  margin-top: 5rpx;
+  margin-right: 15rpx;
+  float: right;
+}
+.des_name{
+  width: 415rpx;
+  margin-top: 20rpx;
+  margin-left: 15rpx;
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+.des_value{
+  height: 45rpx;
+  margin-left: 15rpx;
+  margin-top: 60rpx;
+  float: left;
+  word-spacing: -5rpx;
+  font-size: 37rpx;
+  color: rgb(255, 60, 0);
+}
+.value_icon{
+  font-size: 25rpx;
+}
+.des_type{
+  height: 45rpx;
+  margin-left: 15rpx;
+  margin-top: 70rpx;
+  float: left;
+  font-size: 25rpx;
+  color: gray;
+}
+.des_position{
+  height: 45rpx;
+  margin-left: 25rpx;
+  margin-top: 69rpx;
+  float: left;
+  font-size: 27rpx;
+  color: gray;
+}
+.enter{
+  height: 30rpx;
+  margin-left: 15rpx;
+  margin-top: 115rpx;
+  font-size: 20rpx;
+  color: black;
+}

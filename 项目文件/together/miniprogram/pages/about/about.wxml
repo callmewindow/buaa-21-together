@@ -1,0 +1,123 @@
+
+<view id='notice_title' bindtap='shownotice' style='border-bottom:{{flashborder}}'>
+  <view id='title_text'>更新通知</view>
+  <wux-icon type='ios-arrow-down' size='25' id='title_icon' />
+</view>
+<scroll-view scroll-y="true" id='notice_content' style='display:{{noticedisplay}}'>
+  
+  <view class='flashcontent'>
+    <view class='who'><text space='nbsp'> i 偕行:</text></view>
+    <view class='how'><text space='emsp'>  完成微信云功能的部署，实现了用户对商品数据的上传和通过搜索数据库完成搜索结果的显示，偕行的主要功能已基本实现。丰富了一些页面的内容，如小程序使用说明等。增加了主页以改善用户体验。</text></view>
+    <view class='what'><text space='nbsp'>1.0.0</text></view>
+    <view class='when'><text space='nbsp'>2019.3.13</text></view>
+  </view>
+
+  <view class='flashcontent'>
+    <view class='who'><text space='nbsp'> i 偕行:</text></view>
+    <view class='how'><text space='emsp'>  修复了页面框架存在的bug，美化部分页面组件的排版。各页面的基本功能，包括获取用户信息、点击事件、页面跳转、数据提交等已基本实现。而数据库、存储还需要后续的微信云开发功能辅助实现。</text></view>
+    <view class='what'><text space='nbsp'>0.0.0</text></view>
+    <view class='when'><text space='nbsp'>2019.1.25</text></view>
+  </view>
+
+ <view class='flashcontent'>
+    <view class='who'><text space='nbsp'> i 偕行:</text></view>
+    <view class='how'><text space='emsp'>  偕行的前端页面框架已基本完成，各页面已经能通过主页设置在微信手机客户端的小程序内显示。接下来除了对页面的修改、美化，工作重点将转向对微信云开发的学习和后端功能的实现。</text></view>
+    <view class='what'><text space='nbsp'>0.0.0</text></view>
+    <view class='when'><text space='nbsp'>2018.12.09</text></view>
+  </view>
+
+  <view class='flashcontent'>
+    <view class='who'><text space='nbsp'> i 偕行:</text></view>
+    <view class='how'><text space='emsp'>  偕行前端页面现在已经全部完成，团队成员已经开始后端大框架的构建，相信再过一周偕行的功能能够大致实现，供大家使用。</text></view>
+    <view class='what'><text space='nbsp'>0.0.0</text></view>
+    <view class='when'><text space='nbsp'>2018.11.28</text></view>
+  </view>
+</scroll-view>
+
+<view id='team'>
+  <view id='team_title'>偕行开发者团队</view>
+  <view class='team_content'>
+    <view class='member_ide'><view class='member_num'></view><view class='member_name'>軒     QQ:847590417</view></view>
+    <view class='member_des'>快乐程序员</view>
+  </view>
+  <view class='team_content'>
+    <view class='member_ide'><view class='member_num'></view><view class='member_name'>!od</view></view>
+    <view class='member_des'>快乐程序员</view>
+  </view>
+  <view class='team_content'>
+    <view class='member_ide'><view class='member_num'></view><view class='member_name'>海猫</view></view>
+    <view class='member_des'>快乐程序员</view>
+  </view>
+  <view class='team_content'>
+    <view class='member_ide'><view class='member_num'></view><view class='member_name'>灼灼
+    <!-- ☀ -->
+    </view></view>
+    <view class='member_des'>快乐程序员</view>
+  </view>
+  <view class='team_content' style='border-bottom:1rpx solid rgba(100, 100, 102, 0.322);'>
+    <view class='member_ide'><view class='member_num'></view><view class='member_name'>为你写的故事</view></view>
+    <view class='member_des'>快乐程序员</view>
+  </view>
+</view>
+
+<view id='edition'>
+  <view id='edition_title'>当前版本</view>
+  <view id='edition_content'>1.0.0</view>
+</view>
+
+<view id='contactus'>
+  <view id='us_title'>联系我们</view>
+  <view id='us_content'>
+    <contact-button type="default-dark" size="23" session-from="weapp" id='us_icon'></contact-button>
+  </view>
+</view>
+
+<view id='help'>
+  <view id='help_title'>HELP</view>
+    <view class='help_content'>
+      <view class='help_image'><image src='../../icon/weui.jpg' class='help_img'></image></view>
+      <view class='help_text'>WeUI</view>
+      <wux-icon type='ios-arrow-forward' size='22' class='help_icon' />
+    </view>
+    <!-- <view class='help_content'>
+      <view class='help_image'><image src='../../icon/weui.jpg' class='help_img'></image></view>
+      <view class='help_text'>WeUI</view>
+      <wux-icon type='ios-arrow-forward' size='22' class='help_icon' />
+    </view>
+    <view class='help_content'>
+      <view class='help_image'><image src='../../icon/weui.jpg' class='help_img'></image></view>
+      <view class='help_text'>WeUI</view>
+      <wux-icon type='ios-arrow-forward' size='22' class='help_icon' />
+    </view>
+    <view class='help_content' style='border-bottom:1rpx solid rgba(100, 100, 102, 0.322);'>
+      <view class='help_image'><image src='../../icon/weui.jpg' class='help_img'></image></view>
+      <view class='help_text'>WeUI</view>
+      <wux-icon type='ios-arrow-forward' size='22' class='help_icon' />
+    </view> -->
+</view>
+
+<view id='copyright'><text id='copy_text'>Copyright © 2018-2018 together</text></view>
+
+<!-- <view id='function'>
+  <view class='li_func' id='home' bindtap='toclass'>
+    <image class='icon_image' src='{{homeimg}}' ></image>
+  </view>
+  <view class='li_func' id='fair'>
+    <image class='icon_image' src='{{fairimg}}' ></image>
+  </view>
+  <view class='li_func' id='me' bindtap='toperson'>
+    <image class='icon_image' src='{{meimg}}' ></image>
+  </view>
+</view> -->
+<!-- <view class="function4">
+  <image id="background4" src="{{background4}}"></image>
+  <button id="home" plain="true" bindtap='toclass'>
+    <image class="homeIcon" src="{{homeIcon}}"></image>
+  </button>
+  <button id="fair" plain="true">
+    <image class="fairIcon" src="{{fairIcon}}"></image>
+  </button>
+  <button id="me" plain="true" bindtap='toperson'>
+    <image class="meIcon" src="{{meIcon}}"></image>
+  </button>
+</view> -->

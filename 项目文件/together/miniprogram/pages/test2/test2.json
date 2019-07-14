@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "分类商品",
+  "usingComponents": {
+    "wux-filterbar": "../../dist/filterbar/index",
+    "wux-icon": "../../dist/icon/index",
+    "wux-fab-button": "../../dist/fab-button/index"
+  }
+}

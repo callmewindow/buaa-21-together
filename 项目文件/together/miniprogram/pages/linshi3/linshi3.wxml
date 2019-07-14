@@ -1,0 +1,77 @@
+<view id='title'>
+  <view class="weui-search-bar" id='my_search'>
+            <view class="weui-search-bar__form" id='my_form'>
+
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" id='my_type' placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+
+                <label class="weui-search-bar__label" id='se_content' hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+
+                </view>
+
+                <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+
+            </view>
+</view>
+
+<view class='body' bindtap='toabout'>
+  <swiper class='swiper' autoplay='true' interval='3500' duration='1500' current='0'>
+    <block wx:for="{{imgUrls}}" wx:key="this">
+      <swiper-item>
+        <image class='slide-image' src='{{item}}'></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- <view class='hot'>
+  <view class='hotTitle'>
+    <view class='hotTitleColorBlock'></view>
+    <text class='hotTitleText'>近期热门</text>
+  </view>
+  <view class='hotContent'></view>
+</view> -->
+
+<view class='newInformation'>
+  <view class='newInformationTitle'>最新商品</view>
+  <view class='newInformationContent'>
+    <view class='goods' wx:for="{{good_list}}" wx:key="this" style='display:{{waimaotiao}}'>
+
+        <view class='goods_img'><image src="{{item.fileID}}" class='img_wxss' mode='aspectFit'></image></view>
+        <view class='goods_des' >
+          <view class='des_name'>{{item.goodname}}</view>
+          <view class='des_value'>
+          <text class='value_icon'>￥</text>
+          {{item.price}}</view>
+          <view class='des_type'>{{item.count}}个</view>
+          <view class='des_position'>{{item.position}}</view>
+          <view class='enter'>
+          <text space='nbsp'>{{item.time}}</text>
+          <wux-icon class='enter_icon' type="ios-arrow-forward" size='10' />
+          </view>
+        </view>
+
+      </view>
+  </view>
+</view>
+
+<view class="function4">
+  <image id="background4" src="{{background4}}"></image>
+  <button id="home" plain="true">
+    <image class="homeIcon" src="{{homeIcon}}"></image>
+  </button>
+  <button id="fair" plain="true" bindtap='toclass'>
+    <image class="fairIcon" src="{{fairIcon}}"></image>
+  </button>
+  <button id="me" plain="true" bindtap='toperson'>
+    <image class="meIcon" src="{{meIcon}}"></image>
+  </button>
+</view>

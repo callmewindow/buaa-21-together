@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "搜索内容",
+  "backgroundColor": "#ffffff",
+  "usingComponents": {
+    "wux-icon": "../../dist/icon/index"
+  }
+}

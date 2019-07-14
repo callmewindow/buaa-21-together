@@ -1,0 +1,123 @@
+<view class="block1">
+
+  <view class="head">
+    <open-data style="border-radius:80rpx;overflow:hidden;display:block;height:160rpx;width:160rpx" type="userAvatarUrl"></open-data>
+  </view>
+
+  <view class="nickname">
+    <open-data type="userNickName"></open-data>
+  </view>
+
+  <button class="settings" bindtap="jumpToSettings">
+    <image class="settingsIcon" src="{{settingsIcon}}"></image>
+  </button>
+
+  <view class="settingsView" wx:if="{{openSettings}}">
+
+    <button class="closeSettings" bindtap="jumpToSettings">
+      <image class="closeSettingsIcon" src="{{closeSettingsIcon}}"></image>
+    </button>
+
+    <view class="settingsBtnBar">
+
+
+      <view class='settingsBtn' bindtap="changeAddress">
+        <text class="settingsBtnText">信息设置</text>
+      </view>
+
+      <view class='settingsBtn' bindtap='toquestion'>
+        <text class="settingsBtnText">常见问题</text>
+      </view>
+
+      <view class='settingsBtn' bindtap='toabout'>
+        <text class="settingsBtnText">关于我们</text>
+      </view>
+    </view>
+
+  </view>
+
+  <button class="myFavorites" bindtap="jumpToFavorites">
+    <text class="buttonText">收藏夹</text>
+  </button>
+  <button class="myStore" bindtap="jumpToStore">
+    <text class="buttonText">我的店铺</text>
+  </button>
+
+</view>
+
+<view class="block3">
+
+  <view class="title3">
+    <view class="titlePoint3"></view>
+    <text class="titleText3">校园工具</text>
+  </view>
+
+  <view class="miniProgramBar">
+    <view class="miniProgram">
+      <navigator target="miniProgram" open-type="navigate" app-id="wx43455bfb4cfa6e2f" version="release">
+        <view class='part_act'>
+          <view class='act_content2'>
+            <view class='act_img'>
+              <image src='../../images/shie3.jpg' class='act_image'></image>
+            </view>
+            <view class='act_name'>士谔权益菌</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="miniProgram">
+      <navigator target="miniProgram" open-type="navigate" app-id="wxf68a40a9f57c8f3f" version="release">
+        <view class='part_act'>
+          <view class='act_content2'>
+            <view class='act_img'>
+              <image src='../../images/buaayuan.jpg' class='act_image'></image>
+            </view>
+            <view class='act_name'>北航小程序</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="miniProgram">
+      <navigator target="miniProgram" open-type="navigate" app-id="wx78adad8a552d0009" version="release">
+        <view class='part_act'>
+          <view class='act_content2'>
+            <view class='act_img'>
+              <image src='../../images/maotu.jpg' class='act_image'></image>
+            </view>
+            <view class='act_name'>猫途校园</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+    <view class="miniProgram" bindtap='jumpToSend'>
+      <view class='part_act'>
+        <view class='act_content2'>
+          <view class='act_img'>
+            <image src='../../images/shahangbiaojv.jpg' class='act_image'></image>
+          </view>
+          <view class='act_name'>沙航镖局</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<view class="block4">
+
+  <button class="block4Btn" bindtap='tohome'>
+    <image class="block4BtnIcon" src="{{homeIcon}}"></image>
+  </button>
+
+  <button class="block4Btn" bindtap='toclass'>
+    <image class="block4BtnIcon" src="{{fairIcon}}"></image>
+  </button>
+
+  <button class="block4Btn">
+    <image class="block4BtnIcon" src="{{meIcon}}"></image>
+  </button>
+
+</view>

@@ -1,0 +1,102 @@
+
+
+<wux-select id="wux-select1" />
+<wux-select id="wux-select2" />
+<wux-select id="wux-select3" />
+<wux-select id="wux-select4" />
+
+<form bindsubmit="formSubmit">
+  <wux-cell-group>
+    <wux-cell hover-class="none">
+      <text>名称</text>
+    </wux-cell>
+    <wux-cell hover-class="none">
+      <input type="text" placeholder="首先展示的名字，最长16个字" name="goodname" maxlength="16" />
+    </wux-cell>
+  </wux-cell-group>
+
+  <wux-cell-group>
+    <wux-cell hover-class="none">
+      <picker bindchange="pickerChange00" value="{{index00}}" range="{{array00}}" name="class">
+        <text>分类</text>
+        <view class="choose">{{array00[index00]}}</view>
+      </picker>
+    </wux-cell>
+  </wux-cell-group>
+
+  <wux-cell-group>
+    <wux-cell hover-class="none">
+      <text>单价</text>
+    </wux-cell>
+    <wux-cell hover-class="none">
+      <input type="digit" placeholder="单位：元，最多小数点后两位" name="price" />
+    </wux-cell>
+  </wux-cell-group>
+
+  <wux-cell-group>
+    <wux-cell hover-class="none">
+      <text>数量</text>
+    </wux-cell>
+    <wux-cell hover-class="none">
+      <input type="number" placeholder="单位：个" name="number" />
+    </wux-cell>
+  </wux-cell-group>
+
+  <wux-cell-group>
+    <wux-cell hover-class="none">
+      <text>描述</text>
+    </wux-cell>
+    <wux-cell hover-class="none">
+      <textarea placeholder="详细描述" maxlength="-1" name="description" />
+    </wux-cell>
+  </wux-cell-group>
+
+  <wux-cell-group>
+    <wux-cell hover-class="none">
+      <picker bindchange="pickerChange0" value="{{index0}}" range="{{array0}}" name="location">
+        <text>所在地</text>
+        <view class="choose">{{array0[index0]}}</view>
+      </picker>
+    </wux-cell>
+  </wux-cell-group>
+
+  <wux-cell-group>
+    <wux-cell hover-class="none">
+      <picker bindchange="pickerChange2" value="{{index2}}" range="{{array2}}" name="new">
+        <text>新旧</text>
+        <view class="choose">{{array2[index2]}}</view>
+      </picker>
+    </wux-cell>
+  </wux-cell-group>
+
+  <wux-cell-group>
+    <wux-cell hover-class="none">
+      <text>微信号</text>
+    </wux-cell>
+    <wux-cell hover-class="none">
+      <input type="text" placeholder="用于后续联系" name="usernum" />
+    </wux-cell>
+  </wux-cell-group>
+
+<wux-cell-group>
+    <wux-cell hover-class="none">
+      <text>手机号</text>
+    </wux-cell>
+    <wux-cell hover-class="none">
+      <input type="text" placeholder="用于后续联系" name="usercall" />
+    </wux-cell>
+  </wux-cell-group>
+
+  <wux-cell-group>
+    <wux-cell hover-class="none" bindtap="goUpload">
+      <view>点击上传图片,限一张</view>
+      <view class="text">尽量使用长宽比1:1的以保证最佳展示效果</view>
+      <image class="selectImage" src="{{urlList[0]}}" mode='aspectFit'></image>
+    </wux-cell>
+  </wux-cell-group> 
+
+  <view id="button">
+    <button type="primary" form-type="submit">确认上架</button>
+  </view>
+
+</form>

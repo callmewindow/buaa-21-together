@@ -1,0 +1,134 @@
+<view class="page" style="{{ pageStyle }}">
+
+    <view class="page__bd">
+    <view id='title'>
+        <view class="weui-search-bar" id='my_search'>
+            <view class="weui-search-bar__form" id='my_form'>
+
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" id='my_type' placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+
+                <label class="weui-search-bar__label" id='se_content' hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+
+                </view>
+
+                <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+
+            </view>
+    </view>
+
+    <view id='function'>
+        <wux-filterbar items="{{ items }}" bind:change="onChange" bind:open="onOpen" bind:close="onClose" />
+
+        <view id='sort' bindtap='showsort' style='color:{{sort_color}}'>
+          {{sortshow}}
+        </view>
+        <view id='sort_hide' style='display:{{sort_dis}};'>
+          <view class='sort_li' style='color:{{sort_color1}}' bindtap='sortchoose1'>
+            {{sort1}}
+            <wux-icon style='display:{{sort_icon1}}' type='ios-checkmark' size='30' id='sort_yes' />
+          </view>
+          <view class='sort_li' style='color:{{sort_color2}}' bindtap='sortchoose2'>
+            {{sort2}}
+            <wux-icon style='display:{{sort_icon2}}' type='ios-checkmark' size='30' id='sort_yes' />
+          </view>
+          <view class='sort_li' style='color:{{sort_color3}}' bindtap='sortchoose3'>
+            {{sort3}}
+            <wux-icon style='display:{{sort_icon3}}' type='ios-checkmark' size='30' id='sort_yes' />
+          </view>
+          <view class='sort_li' style='color:{{sort_color4}}' bindtap='sortchoose4'>
+            {{sort4}}
+            <wux-icon style='display:{{sort_icon4}}' type='ios-checkmark' size='30' id='sort_yes' />
+          </view>
+        </view>
+
+        <view id='type' bindtap='showtype' style='color:{{type_color}}'>{{typeshow}}</view>
+        <view id='type_hide' style='display:{{type_dis}}'>
+          <view class='type_li' style='color:{{type_color1}}' bindtap='typechoose1'>
+            {{type1}}
+            <wux-icon style='display:{{type_icon1}}' type='ios-checkmark' size='30' id='type_yes' />
+          </view>
+          <view class='type_li' style='color:{{type_color2}}' bindtap='typechoose2'>
+            {{type2}}
+            <wux-icon style='display:{{type_icon2}}' type='ios-checkmark' size='30' id='type_yes' />
+          </view>
+          <view class='type_li' style='color:{{type_color3}}' bindtap='typechoose3'>
+            {{type3}}
+            <wux-icon style='display:{{type_icon3}}' type='ios-checkmark' size='30' id='type_yes' />
+          </view>
+          <view class='type_li' style='color:{{type_color4}}' bindtap='typechoose4'>
+            {{type4}}
+            <wux-icon style='display:{{type_icon4}}' type='ios-checkmark' size='30' id='type_yes' />
+          </view>
+        </view>
+
+        <view id='array' bindtap='changearray'>
+          <image src='{{arrayimg}}' class='img_wxss' ></image>
+        </view>
+
+    </view>
+      
+        <view class="weui-panel weui-panel_access" id='content'>
+            <view class="weui-panel__bd">
+                <view class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" wx:for="{{ repos }}" wx:key="">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="{{ item.owner.avatar_url }}" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">{{ item.name }}</view>
+                        <view class="weui-media-box__desc">{{ item.description }}</view>
+                        <view class="weui-media-box__info">
+                            <view class="weui-media-box__info__meta">forks: {{ item.forks_count }}</view>
+                            <view class="weui-media-box__info__meta">stars: {{ item.stargazers_count }}</view>
+                            <view class="weui-media-box__info__meta">date: {{ item.date }}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+    <view class='allgoods' >
+      <view class='kongbai' style='display:{{kong}}'>
+        当前分类下暂无商品出售
+      </view>
+      <view class='goods' wx:for="{{good_list}}" wx:key="this" style='display:{{waimaotiao}}'>
+      <navigator url='../detail/detail?id={{item._id}}'>
+        <view class='goods_img'><image src="{{item.fileID}}" class='img_wxss' mode='aspectFit'></image></view>
+        <view class='goods_des' >
+          <view class='des_name'>{{item.goodname}}</view>
+          <view class='des_value'>
+          <text class='value_icon'>￥</text>
+          {{item.price}}</view>
+          <view class='des_type'>{{item.count}}个</view>
+          <view class='des_position'>{{item.position}}</view>
+          <view class='enter'>
+          <text space='nbsp'>{{item.time}}</text>
+          <wux-icon class='enter_icon' type="ios-arrow-forward" size='10' />
+          </view>
+        </view>
+      </navigator>
+      </view>
+     
+      <view class='goods2' wx:for="{{good_list}}" wx:key="this" style='display:{{waimaoge}}'>
+      <navigator url='../detail/detail?id={{item._id}}'>
+        <view class='goods_img2'><image src="{{item.fileID}}" class='img_wxss' mode='aspectFit'></image></view>
+      </navigator>
+      </view>
+
+    </view>
+
+</view>
+
+<movable-view direction="all" x="{{x}}" y="{{y}}" id='float'>
+  <wux-fab-button position="bottomRight" direction="vertical" theme="calm" buttons="{{buttons}}" bind:click="onClick" />
+</movable-view>
